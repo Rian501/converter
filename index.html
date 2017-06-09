@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Temperature Converter</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <!-- 
 In the HTML, have one input field where someone can enter in a temperature.
@@ -12,17 +13,17 @@ Create another button that, when clicked, clears any text in the input field. --
 <body>
 	<h1>Temperature converter</h1>
 	<section id="take-in-form">
-<!-- 		<form> -->
-			<label for="tempInput">Input a temperature to convert:</label>
-			<input type="number" name="temp" id="tempInput">
-			<legend>Convert to:</legend>
-			<input type="radio" name="tempType" id="toCelsius">
-			<label for="toCelsius">Celsius</label>
-			<input type="radio" name="tempType" id="toFahren">
-			<label for="toFahren">Fahrenheit</label>
-			<button type="submit" id="tempInputBtn">Convert!</button>
-			<button type="reset">Reset</button>
-<!-- 		</form> -->
+
+		<label for="tempInput">Input a temperature to convert:</label>
+		<input type="number" name="temp" id="tempInput">
+		<legend>Convert to:</legend>
+		<input type="radio" name="tempType" id="toCelsius">
+		<label for="toCelsius">Celsius</label>
+		<input type="radio" name="tempType" id="toFahren">
+		<label for="toFahren">Fahrenheit</label>
+		<button type="submit" id="tempInputBtn">Convert!</button>
+		<button type="reset" id="clear">Reset</button>
+
 	</section>
 	<section class="temp-output-wrapper">
 		<div id="temp-output">
